@@ -1,0 +1,1438 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>CORTEZ BLANC | Fashion Store</title>
+
+    <link
+        rel="stylesheet"
+        href="fashion site.css"
+    >
+</head>
+
+<body>
+
+    
+
+    <div id="loader">
+        <h2>CORTEZ BLANC</h2>
+        <div class="loader-line"></div>
+    </div>
+
+
+    
+    <nav>
+
+        <h2 class="nav-logo">
+            MY BRAND
+        </h2>
+
+        <button
+            class="menu-button"
+            id="menu-button"
+            type="button"
+            aria-label="Open menu"
+        >
+            ☰
+        </button>
+
+        <ul id="nav-menu">
+
+            <li>
+                <a href="#welcome">Home</a>
+            </li>
+
+            <li>
+                <a href="#products">Products</a>
+            </li>
+
+            <li>
+                <a href="#features">Features</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact us</a>
+            </li>
+
+        </ul>
+
+
+        
+        <div class="nav-icons">
+
+            
+
+            <button
+                class="icon-button wishlist-icon"
+                onclick="showWishlist()"
+                title="Wishlist"
+                type="button"
+                aria-label="Open wishlist"
+            >
+
+                <span class="nav-icon">
+                    ♡
+                </span>
+
+                <span
+                    class="icon-count"
+                    id="wishlist-count"
+                >
+                    0
+                </span>
+
+            </button>
+
+
+            
+
+            <button
+                class="icon-button cart-icon"
+                onclick="openCart()"
+                title="Shopping cart"
+                type="button"
+                aria-label="Open shopping cart"
+            >
+
+                <span class="nav-icon">
+                    🛒
+                </span>
+
+                <span
+                    class="icon-count"
+                    id="cart-count"
+                >
+                    0
+                </span>
+
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    
+
+    <header id="welcome">
+
+        <h1 class="Business">
+            CORTEZ BLANC
+        </h1>
+
+        <p class="tagline">
+            STYLE MADE FOR YOU
+        </p>
+
+
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <p>
+                    NEW COLLECTION
+                </p>
+
+                <h1>
+                    NEW LOOKS
+                </h1>
+
+                <p>
+                    Discover pieces made to stand out.
+                </p>
+
+                <a href="#products">
+                    <button
+                        class="main-button"
+                        type="button"
+                    >
+                        SHOP NOW
+                    </button>
+                </a>
+
+            </div>
+
+        </section>
+
+    </header>
+
+
+
+    <div class="announcement">
+
+        <div class="announcement-text">
+
+            NEW DROPS
+            &nbsp;&nbsp; • &nbsp;&nbsp;
+
+            CLAIM YOUR PIECES TODAY
+            &nbsp;&nbsp; • &nbsp;&nbsp;
+
+            FREE DELIVERY ON THE ISLAND
+            &nbsp;&nbsp; • &nbsp;&nbsp;
+
+            LIMITED STOCK
+
+        </div>
+
+    </div>
+
+
+    
+
+    <section
+        id="products"
+        class="products"
+    >
+
+        <h2>
+            NEW ARRIVALS
+        </h2>
+
+        <p class="section-description">
+            Find your next favourite piece.
+        </p>
+
+
+        
+
+        <div class="shop-controls">
+
+            <input
+                type="search"
+                id="search"
+                placeholder="Search products..."
+                autocomplete="off"
+            >
+
+            <select id="category-filter">
+
+                <option value="all">
+                    All Categories
+                </option>
+
+                <option value="tops">
+                    Tops
+                </option>
+
+                <option value="capri pants">
+                    Capri Pants
+                </option>
+
+                <option value="skorts">
+                    Skorts
+                </option>
+
+                <option value="accessories">
+                    Accessories
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <p
+            id="product-result-count"
+            class="product-result-count"
+        >
+            9 products
+        </p>
+
+
+
+        <div class="product-container">
+
+
+            
+
+            <article
+                class="product-card"
+                data-name="Black Baby Tee"
+                data-category="tops"
+                data-price="15000"
+                data-stock="in-stock"
+                data-image="images/shirt1.jpg.jpg"
+            >
+
+                <div class="product-image-container">
+
+                    <img
+    class="img"
+    src="images/shirt1.jpg.jpg"
+    alt="Black Baby Tee"
+    style="display: block; width: 100%; height: auto;"
+>
+
+                    <span class="stock-badge">
+                        IN STOCK
+                    </span>
+
+                    <button
+                        class="image-quick-view"
+                        type="button"
+                        onclick="quickView('Black Baby Tee')"
+                        aria-label="Quick view Black Baby Tee"
+                    >
+                        👁
+                    </button>
+
+                </div>
+
+                <h3>
+                    Black Baby Tee
+                </h3>
+
+                <p>
+                    Tops
+                </p>
+
+                <p class="price">
+                    ₦15,000
+                </p>
+
+                <div class="product-buttons">
+
+                    <button
+                        type="button"
+                        onclick="quickView('Black Baby Tee')"
+                    >
+                        QUICK VIEW
+                    </button>
+
+                    <button
+                        type="button"
+                        onclick="addToCart('Black Baby Tee')"
+                    >
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <button
+                    class="wishlist-button"
+                    type="button"
+                    onclick="toggleWishlist('Black Baby Tee')"
+                    data-product-name="Black Baby Tee"
+                >
+                    ♡ Add to Wishlist
+                </button>
+
+            </article>
+
+
+            
+
+            <article
+                class="product-card"
+                data-name="Red Baby Tee"
+                data-category="tops"
+                data-price="13000"
+                data-stock="sold-out"
+                data-image="images/shirt2.jpg.jpg"
+            >
+
+                <div class="product-image-container">
+
+                    <img
+                        class="img"
+                        src="images/shirt2.jpg.jpg"
+                        alt="Red Baby Tee"
+                    >
+
+                    <span class="stock-badge sold-out">
+                        OUT OF STOCK
+                    </span>
+
+                </div>
+
+                <h3>
+                    Red Baby Tee
+                </h3>
+
+                <p>
+                    Tops
+                </p>
+
+                <p class="price">
+                    ₦13,000
+                </p>
+
+                <p class="out-of-stock">
+                    CURRENTLY UNAVAILABLE
+                </p>
+
+                <button
+                    class="waiting-button"
+                    type="button"
+                    onclick="showWaitingList('Red Baby Tee')"
+                >
+                    JOIN WAITING LIST
+                </button>
+
+                <button
+                    class="wishlist-button"
+                    type="button"
+                    onclick="toggleWishlist('Red Baby Tee')"
+                    data-product-name="Red Baby Tee"
+                >
+                    ♡ Add to Wishlist
+                </button>
+
+            </article>
+
+
+            
+
+            <article
+                class="product-card"
+                data-name="Grey Baby Tee"
+                data-category="tops"
+                data-price="12000"
+                data-stock="in-stock"
+                data-image="images/download (2).jpg"
+            >
+
+                <div class="product-image-container">
+
+                    <img
+                        class="img"
+                        src="images/download (2).jpg"
+                        alt="Grey Baby Tee"
+                    >
+
+                    <span class="stock-badge">
+                        IN STOCK
+                    </span>
+
+                    <button
+                        class="image-quick-view"
+                        type="button"
+                        onclick="quickView('Grey Baby Tee')"
+                    >
+                        👁
+                    </button>
+
+                </div>
+
+                <h3>
+                    Grey Baby Tee
+                </h3>
+
+                <p>
+                    Tops
+                </p>
+
+                <p class="price">
+                    ₦12,000
+                </p>
+
+                <div class="product-buttons">
+
+                    <button
+                        type="button"
+                        onclick="quickView('Grey Baby Tee')"
+                    >
+                        QUICK VIEW
+                    </button>
+
+                    <button
+                        type="button"
+                        onclick="addToCart('Grey Baby Tee')"
+                    >
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <button
+                    class="wishlist-button"
+                    type="button"
+                    onclick="toggleWishlist('Grey Baby Tee')"
+                    data-product-name="Grey Baby Tee"
+                >
+                    ♡ Add to Wishlist
+                </button>
+
+            </article>
+
+
+            
+
+            <article
+                class="product-card"
+                data-name="Body Print Longsleeve Top"
+                data-category="tops"
+                data-price="10000"
+                data-stock="in-stock"
+                data-image="images/Y2K 3D Body Print Top - Black _ L.jpg"
+            >
+
+                <div class="product-image-container">
+
+                    <img
+                        class="img"
+                        src="images/Y2K 3D Body Print Top - Black _ L.jpg"
+                        alt="Body Print Longsleeve Top"
+                    >
+
+                    <span class="stock-badge">
+                        IN STOCK
+                    </span>
+
+                    <button
+                        class="image-quick-view"
+                        type="button"
+                        onclick="quickView('Body Print Longsleeve Top')"
+                    >
+                        👁
+                    </button>
+
+                </div>
+
+                <h3>
+                    Body Print Longsleeve Top
+                </h3>
+
+                <p>
+                    Tops
+                </p>
+
+                <p class="price">
+                    ₦10,000
+                </p>
+
+                <div class="product-buttons">
+
+                    <button
+                        type="button"
+                        onclick="quickView('Body Print Longsleeve Top')"
+                    >
+                        QUICK VIEW
+                    </button>
+
+                    <button
+                        type="button"
+                        onclick="addToCart('Body Print Longsleeve Top')"
+                    >
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <button
+                    class="wishlist-button"
+                    type="button"
+                    onclick="toggleWishlist('Body Print Longsleeve Top')"
+                    data-product-name="Body Print Longsleeve Top"
+                >
+                    ♡ Add to Wishlist
+                </button>
+
+            </article>
+
+
+            
+
+            <article
+                class="product-card"
+                data-name="Siren Halter Top"
+                data-category="tops"
+                data-price="12000"
+                data-stock="sold-out"
+                data-image="images/SIREN HALTER TOP (new fabric) – MARINA EEЯRIE.jpg"
+            >
+
+                <div class="product-image-container">
+
+                    <img
+                        class="img"
+                        src="images/SIREN HALTER TOP (new fabric) – MARINA EEЯRIE.jpg"
+                        alt="Siren Halter Top"
+                    >
+
+                    <span class="stock-badge sold-out">
+                        OUT OF STOCK
+                    </span>
+
+                </div>
+
+                <h3>
+                    Siren Halter Top
+                </h3>
+
+                <p>
+                    Tops
+                </p>
+
+                <p class="price">
+                    ₦12,000
+                </p>
+
+                <p class="out-of-stock">
+                    CURRENTLY UNAVAILABLE
+                </p>
+
+                <button
+                    class="waiting-button"
+                    type="button"
+                    onclick="showWaitingList('Siren Halter Top')"
+                >
+                    JOIN WAITING LIST
+                </button>
+
+                <button
+                    class="wishlist-button"
+                    type="button"
+                    onclick="toggleWishlist('Siren Halter Top')"
+                    data-product-name="Siren Halter Top"
+                >
+                    ♡ Add to Wishlist
+                </button>
+
+            </article>
+
+
+            
+
+            <article
+                class="product-card"
+                data-name="Midnight Rider Capri Pants"
+                data-category="capri pants"
+                data-price="10000"
+                data-stock="in-stock"
+                data-image="images/Midnight Rider Capri Pants by Zemeta.jpg"
+            >
+
+                <div class="product-image-container">
+
+                    <img
+                        class="img"
+                        src="images/Midnight Rider Capri Pants by Zemeta.jpg"
+                        alt="Midnight Rider Capri Pants"
+                    >
+
+                    <span class="stock-badge">
+                        IN STOCK
+                    </span>
+
+                    <button
+                        class="image-quick-view"
+                        type="button"
+                        onclick="quickView('Midnight Rider Capri Pants')"
+                    >
+                        👁
+                    </button>
+
+                </div>
+
+                <h3>
+                    Midnight Rider Capri Pants
+                </h3>
+
+                <p>
+                    Capri Pants
+                </p>
+
+                <p class="price">
+                    ₦10,000
+                </p>
+
+                <div class="product-buttons">
+
+                    <button
+                        type="button"
+                        onclick="quickView('Midnight Rider Capri Pants')"
+                    >
+                        QUICK VIEW
+                    </button>
+
+                    <button
+                        type="button"
+                        onclick="addToCart('Midnight Rider Capri Pants')"
+                    >
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <button
+                    class="wishlist-button"
+                    type="button"
+                    onclick="toggleWishlist('Midnight Rider Capri Pants')"
+                    data-product-name="Midnight Rider Capri Pants"
+                >
+                    ♡ Add to Wishlist
+                </button>
+
+            </article>
+
+
+            
+
+            <article
+    class="product-card"
+    data-name="Leopard Print Patched Capri Pants"
+    data-category="capri pants"
+    data-price="12000"
+    data-stock="in-stock"
+    data-image="images/Our J-Fashion Y2K Style.jpg"
+>
+
+    <div class="product-image-container">
+
+        <img
+            class="img"
+            src="images/Our J-Fashion Y2K Style.jpg"
+            alt="Leopard Print Patched Capri Pants"
+        >
+
+        <span class="stock-badge">
+            IN STOCK
+        </span>
+
+        <button
+            class="image-quick-view"
+            type="button"
+            onclick="quickView('Leopard Print Patched Capri Pants')"
+        >
+            👁
+        </button>
+
+    </div>
+
+    <h3>
+        Leopard Print Patched Capri Pants
+    </h3>
+
+    <p>
+        Capri Pants
+    </p>
+
+    <p class="price">
+        ₦12,000
+    </p>
+
+    <div class="product-buttons">
+
+        <button
+            type="button"
+            onclick="quickView('Leopard Print Patched Capri Pants')"
+        >
+            QUICK VIEW
+        </button>
+
+        <button
+            type="button"
+            onclick="addToCart('Leopard Print Patched Capri Pants')"
+        >
+            ADD TO CART
+        </button>
+
+    </div>
+
+    <button
+        class="wishlist-button"
+        type="button"
+        onclick="toggleWishlist('Leopard Print Patched Capri Pants')"
+        data-product-name="Leopard Print Patched Capri Pants"
+    >
+        ♡ Add to Wishlist
+    </button>
+
+</article>
+
+            
+            <article
+                class="product-card"
+                data-name="Belted Skort"
+                data-category="skorts"
+                data-price="7000"
+                data-stock="in-stock"
+                data-image="images/75294625013260930.jpg"
+            >
+
+                <div class="product-image-container">
+
+                    <img
+                        class="img"
+                        src="images/75294625013260930.jpg"
+                        alt="Belted Skort"
+                    >
+
+                    <span class="stock-badge">
+                        IN STOCK
+                    </span>
+
+                    <button
+                        class="image-quick-view"
+                        type="button"
+                        onclick="quickView('Belted Skort')"
+                    >
+                        👁
+                    </button>
+
+                </div>
+
+                <h3>
+                    Belted Skort
+                </h3>
+
+                <p>
+                    Skorts
+                </p>
+
+                <p class="price">
+                    ₦7,000
+                </p>
+
+                <div class="product-buttons">
+
+                    <button
+                        type="button"
+                        onclick="quickView('Belted Skort')"
+                    >
+                        QUICK VIEW
+                    </button>
+
+                    <button
+                        type="button"
+                        onclick="addToCart('Belted Skort')"
+                    >
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <button
+                    class="wishlist-button"
+                    type="button"
+                    onclick="toggleWishlist('Belted Skort')"
+                    data-product-name="Belted Skort"
+                >
+                    ♡ Add to Wishlist
+                </button>
+
+            </article>
+
+
+            
+
+            <article
+                class="product-card"
+                data-name="Spike Shades"
+                data-category="accessories"
+                data-price="7000"
+                data-stock="in-stock"
+                data-image="images/Ouch Sunglasses.jpg"
+            >
+
+                <div class="product-image-container">
+
+                    <img
+                        class="img"
+                        src="images/Ouch Sunglasses.jpg"
+                        alt="Spike Shades"
+                    >
+
+                    <span class="stock-badge">
+                        IN STOCK
+                    </span>
+
+                    <button
+                        class="image-quick-view"
+                        type="button"
+                        onclick="quickView('Spike Shades')"
+                    >
+                        👁
+                    </button>
+
+                </div>
+
+                <h3>
+                    Spike Shades
+                </h3>
+
+                <p>
+                    Accessories
+                </p>
+
+                <p class="price">
+                    ₦7,000
+                </p>
+
+                <div class="product-buttons">
+
+                    <button
+                        type="button"
+                        onclick="quickView('Spike Shades')"
+                    >
+                        QUICK VIEW
+                    </button>
+
+                    <button
+                        type="button"
+                        onclick="addToCart('Spike Shades')"
+                    >
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <button
+                    class="wishlist-button"
+                    type="button"
+                    onclick="toggleWishlist('Spike Shades')"
+                    data-product-name="Spike Shades"
+                >
+                    ♡ Add to Wishlist
+                </button>
+
+            </article>
+
+        </div>
+
+
+        
+        
+
+        <div
+            id="no-products"
+            class="no-products"
+        >
+            <h3>
+                No products found.
+            </h3>
+
+            <p>
+                Try another search or category.
+            </p>
+        </div>
+
+    </section>
+
+
+    
+
+    <section
+        id="waiting-list"
+        class="waiting-list"
+    >
+
+        <button
+            class="close-button"
+            type="button"
+            onclick="closeWaitingList()"
+        >
+            &times;
+        </button>
+
+        <h2>
+            JOIN THE WAITING LIST
+        </h2>
+
+        <br>
+
+        <p>
+            This item is currently unavailable.
+            Leave your details and we'll let you know
+            when it becomes available.
+        </p>
+
+        <br>
+
+        <form
+            id="waiting-list-form"
+            onsubmit="submitWaitingList(event)"
+        >
+
+            <input
+                type="text"
+                id="waiting-name"
+                placeholder="Full name"
+                required
+            >
+
+            <input
+                type="email"
+                id="waiting-email"
+                placeholder="Email address"
+                required
+            >
+
+            <input
+                type="tel"
+                id="waiting-phone"
+                placeholder="Phone number"
+                required
+            >
+
+            <input
+                type="text"
+                id="waiting-product"
+                readonly
+                required
+            >
+
+            <button type="submit">
+                JOIN WAITING LIST
+            </button>
+
+        </form>
+
+    </section>
+
+
+    
+
+    <div
+        id="cart-overlay"
+        class="cart-overlay"
+        onclick="closeCart()"
+    ></div>
+
+
+    <aside
+        id="cart"
+        class="cart"
+        aria-label="Shopping cart"
+    >
+
+        <button
+            class="close-button"
+            onclick="closeCart()"
+            type="button"
+            aria-label="Close cart"
+        >
+            &times;
+        </button>
+
+        <h2>
+            YOUR CART
+        </h2>
+
+
+        
+
+        <div id="cart-items"></div>
+
+
+        
+
+        <div class="cart-total">
+
+            <strong>
+                Total:
+            </strong>
+
+            <strong id="cart-total">
+                ₦0
+            </strong>
+
+        </div>
+
+
+        
+
+        <button
+            class="checkout-button"
+            onclick="openCheckout()"
+            type="button"
+        >
+            PROCEED TO CHECKOUT
+        </button>
+
+    </aside>
+
+
+   
+    <div
+        id="quick-view-modal"
+        class="modal-overlay"
+        onclick="closeQuickView(event)"
+    >
+
+        <div
+            id="quick-view-content"
+            class="quick-view"
+            onclick="event.stopPropagation()"
+        >
+
+           
+
+        </div>
+
+    </div>
+
+
+    
+    <div
+        id="checkout-modal"
+        class="modal-overlay"
+        onclick="closeCheckout(event)"
+    >
+
+        <div
+            class="checkout"
+            onclick="event.stopPropagation()"
+        >
+
+            <button
+                class="close-button"
+                type="button"
+                onclick="closeCheckout()"
+                aria-label="Close checkout"
+            >
+                &times;
+            </button>
+
+
+            <h2>
+                CHECKOUT
+            </h2>
+
+            <br>
+
+
+           
+
+            <div id="checkout-summary"></div>
+
+
+           
+
+            <form
+                id="checkout-form"
+                onsubmit="completeOrder(event)"
+            >
+
+                <label for="customer-name">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="customer-name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+
+                <label for="customer-email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="customer-email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <label for="customer-address">
+                    Delivery Address
+                </label>
+
+                <textarea
+                    id="customer-address"
+                    rows="4"
+                    placeholder="Enter your delivery address"
+                    required
+                ></textarea>
+
+
+                <label for="payment-method">
+                    Payment Method
+                </label>
+
+                <select
+                    id="payment-method"
+                    required
+                >
+
+                    <option value="">
+                        Select payment method
+                    </option>
+
+                    <option value="Debit/Credit Card">
+                        Debit/Credit Card
+                    </option>
+
+                    <option value="Bank Transfer">
+                        Bank Transfer
+                    </option>
+
+                    <option value="USSD">
+                        USSD
+                    </option>
+
+                </select>
+
+
+                <button
+                    type="submit"
+                >
+                    COMPLETE ORDER
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    
+
+    <div
+        id="order-confirmation"
+        class="modal-overlay"
+        onclick="closeOrderConfirmation(event)"
+    >
+
+        <div
+            class="checkout"
+            onclick="event.stopPropagation()"
+        >
+
+            <button
+                class="close-button"
+                type="button"
+                onclick="closeOrderConfirmation()"
+            >
+                &times;
+            </button>
+
+            <h2>
+                ORDER CONFIRMED 
+            </h2>
+
+            <br>
+
+            <div
+                id="confirmation-content"
+            ></div>
+
+            <br>
+
+            <button
+                type="button"
+                onclick="finishShopping()"
+            >
+                CONTINUE SHOPPING
+            </button>
+
+        </div>
+
+    </div>
+
+
+    
+    <div
+        id="wishlist-modal"
+        class="modal-overlay"
+        onclick="closeWishlist(event)"
+    >
+
+        <div
+            class="wishlist-panel"
+            onclick="event.stopPropagation()"
+        >
+
+            <button
+                class="close-button"
+                type="button"
+                onclick="closeWishlist()"
+            >
+                &times;
+            </button>
+
+            <h2>
+                YOUR WISHLIST
+            </h2>
+
+            <br>
+
+            <div id="wishlist-items"></div>
+
+        </div>
+
+    </div>
+
+
+    
+    <div
+        id="notification"
+        class="notification"
+    ></div>
+
+
+    
+    <section
+        id="features"
+        class="features"
+    >
+
+        <h2>
+            WHY SHOP WITH US?
+        </h2>
+
+
+        <div class="feature-container">
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    
+                </div>
+
+                <h3>
+                    Unique Pieces
+                </h3>
+
+                <p>
+                    Styles selected to help
+                    you stand out.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    
+                </div>
+
+                <h3>
+                    Island Delivery
+                </h3>
+
+                <p>
+                    Enjoy free delivery
+                    anywhere on the island.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    
+                </div>
+
+                <h3>
+                    Made For You
+                </h3>
+
+                <p>
+                    Fashion pieces chosen
+                    with you in mind.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    
+                </div>
+
+                <h3>
+                    Free Gift
+                </h3>
+
+                <p>
+                    Receive a free lapel pin
+                    with every order.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+   
+
+    <section
+        id="contact"
+        class="features"
+    >
+
+        <h2>
+            CONTACT US
+        </h2>
+
+        <br>
+
+        <p style="color: white;">
+            Phone:
+            <a
+                href="tel:08152399929"
+                style="color: pink;"
+            >
+                08152399929
+            </a>
+        </p>
+
+        <br>
+
+        <p style="color: white;">
+            Have questions about an order?
+            Contact us and we'll be happy to help.
+        </p>
+
+    </section>
+
+
+    
+
+    <button
+        id="back-to-top"
+        type="button"
+        onclick="scrollToTop()"
+        aria-label="Back to top"
+    >
+        ↑
+    </button>
+
+
+    
+
+    <footer>
+
+        <p>
+            © 2026 CORTEZ BLANC.
+            All rights reserved.
+        </p>
+
+        <br>
+
+        <p>
+            STYLE MADE FOR YOU.
+        </p>
+
+    </footer>
+
+
+    
+
+    <script src="fashion site.js"></script>
+
+</body>
+
+</html>
+
